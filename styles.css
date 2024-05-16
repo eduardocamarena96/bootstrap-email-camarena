@@ -1,5 +1,9 @@
 .container-fluid {
-    padding: 0;
+    /* padding: 0; */
+}
+
+* {
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -60,7 +64,7 @@ p {
     background-color: gray; 
     border-radius: 50%; 
     flex-shrink: 0;
-    background-image: url('./images/arima1.png');
+    background-image: url('./images/arima.png');
     background-size: cover;
 }
 

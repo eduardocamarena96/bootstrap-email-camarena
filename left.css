@@ -1,0 +1,48 @@
+* {
+    /* outline: 1px solid red; */
+}
+
+body {
+    font-family: "Kulim Park", Arial;
+}
+
+.navigation-sidebar-option {
+    padding: 0 24px 0 24px;
+    font-size: 24px;
+    color: hsla(0, 0%, 15%, 0.5);
+}
+
+.navigation-sidebar-option--highlight {
+    color: #252525;
+}
+
+.messages-amount--highlight {
+    color: #26B4C8;
+}
+
+.compose-btn {
+    margin-bottom: 16px;
+    padding: 12px 0 12px 0;
+    background-color: #26B4C8;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+}
+
+.user-profile-pic {
+    width: 64px; 
+    height: 64px; 
+    background-color: gray; 
+    border-radius: 50%; 
+    background-image: url('./images/arima.png');
+    background-size: cover;
+    border: 1px solid hsla(0, 0%, 15%, 0.2);
+}
+
+.user-settings-dropdown {
+    background-color: white;
+    color: #252525;
+    border: 1px solid hsla(0, 0%, 15%, 0.2);
+    border-radius: 8px;
+    font-size: 20px;
+}
