@@ -53,8 +53,26 @@ p {
     color: hsla(0, 0%, 15%, 0.6);
 }
 
+.email-container {
+    padding: 0 16px 0 16px;
+}
+
+.email-container:hover {
+    box-shadow: 0 0 2px #252525;
+}
+
+.email-container--highlight {
+    background-color: hsla(0, 0%, 15%, 0.1);
+    border-radius: 8px;
+}
+
 .email-list {
-    padding: 16px;
+    border-left: 2px solid hsla(0, 0%, 15%, 0.2);
+    border-right: 2px solid hsla(0, 0%, 15%, 0.2);
+    padding: 16px 8px 16px 8px;
+    overflow-y: hidden ;
+    max-height: 100vh;
+    /* scrollbar-color: #26B4C8 white; */
 }
 
 .profile-pic {
@@ -115,26 +133,13 @@ p {
     text-overflow: ellipsis;
 }
 
-.navigation-sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 280px;
-    height: 100%;
-    background-color: hsla(0, 0%, 15%, 0.5);
-    backdrop-filter: blur(8px);
-    transition: all 0.3s linear;
-    transform: translate(-100%);
-}
+/* Remove hamburger menu and adjust padding from search bar input box */
+@media (min-width: 992px) {
+    .hamburger-menu {
+        display: none;
+    }
 
-
-.close-btn {
-    position: absolute; 
-    top: 0;
-    font-size: 64px;
-    color: white;
-}
-
-.show-sidebar {
-    transform: translate(0);
-}
+    .search-bar__input {
+        padding-left: 16px;
+    }
+  }

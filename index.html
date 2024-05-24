@@ -22,6 +22,7 @@
 
 
     <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 
@@ -33,7 +34,97 @@
 
         <div class="row">
 
-            <div class="col email-list">
+            <div class="nav-column col-lg-2 col-xl-2 d-none d-lg-block d-xl-block">
+
+
+                <div id="navigation-sidebar" class="navigation-sidebar d-flex flex-column p-4 gap-3">
+
+                    <div class="user-profile-pic align-self-center"></div>
+
+                    <div class="dropdown w-100">
+                        <button class="user-settings-dropdown btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Eduardo Camarena
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Another Account</a></li>
+                            <li><a class="dropdown-item" href="#">Another Account</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="compose-btn btn btn-primary">Compose</button>
+
+                    <div id="inbox-navigation-sidebar-option" class="navigation-sidebar-option navigation-sidebar-option--highlight d-flex justify-content-between">
+
+                        <div class="icon-title d-flex gap-3">
+                            <i class="bi bi-inbox"></i>
+                            <p class="navigation-sidebar-option-title">Inbox</p>
+                        </div>
+                        
+                        <p id="inbox-messages-amount" class="messages-amount messages-amount--highlight">25</p>
+
+                    </div>
+
+                    <div class="navigation-sidebar-option d-flex justify-content-between">
+
+                        <div class="icon-title d-flex gap-3">
+                            <i class="bi bi-star"></i>
+                            <p class="navigation-sidebar-option-title">Favorites</p>
+                        </div>
+                        
+                        <p class="messages-amount">4</p>
+
+                    </div>
+
+                    <div class="navigation-sidebar-option d-flex justify-content-between">
+
+                        <div class="icon-title d-flex gap-3">
+                            <i class="bi bi-send"></i>                                
+                            <p class="navigation-sidebar-option-title">Sent</p>
+                        </div>
+                        
+                        <p class="messages-amount">0</p>
+
+                    </div>
+
+                    <div class="navigation-sidebar-option d-flex justify-content-between">
+
+                        <div class="icon-title d-flex gap-3">
+                            <i class="bi bi-pencil-square"></i>                                
+                            <p class="navigation-sidebar-option-title">Drafts</p>
+                        </div>
+                        
+                        <p class="messages-amount">0</p>
+
+                    </div>
+
+                    <div class="navigation-sidebar-option d-flex justify-content-between">
+
+                        <div class="icon-title d-flex gap-3">
+                            <i class="bi bi-exclamation-triangle"></i>
+                            <p class="navigation-sidebar-option-title">Spam</p>
+                        </div>
+                        
+                        <p class="messages-amount">10</p>
+
+                    </div>
+
+                    <div class="navigation-sidebar-option d-flex justify-content-between">
+
+                        <div class="icon-title d-flex gap-3">
+                            <i class="bi bi-trash"></i>
+                            <p class="navigation-sidebar-option-title">Trash</p>
+                        </div>
+                        
+                        <p class="messages-amount">5</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-5 col-xl-4 email-list">
 
                 <div class="search-bar">
                     <i class="bi bi-list hamburger-menu"></i>
@@ -84,6 +175,69 @@
 
                 </div>
 
+                <div class="d-flex align-items-center email-container email-container--highlight">
+
+                    <div class="profile-pic d-none d-sm-block"></div>
+
+                    <div class="d-flex flex-column px-3 py-3 email2">
+
+
+                        <div class="name-date">
+    
+                            <p class="name-date__name">Firstnames Lastname</p>
+                            <p class="name-date__date">12:00 AM</p>
+    
+                        </div>
+    
+                        <p class="subject-title">Subject Title</p>
+                        <p class="message">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+                    </div>
+
+                </div>
+
+                <div class="d-flex align-items-center email-container">
+
+                    <div class="profile-pic d-none d-sm-block"></div>
+
+                    <div class="d-flex flex-column px-3 py-3 email2">
+
+
+                        <div class="name-date">
+    
+                            <p class="name-date__name">Firstnames Lastname</p>
+                            <p class="name-date__date">12:00 AM</p>
+    
+                        </div>
+    
+                        <p class="subject-title">Subject Title</p>
+                        <p class="message">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+                    </div>
+
+                </div>
+
+                <div class="d-flex align-items-center email-container">
+
+                    <div class="profile-pic d-none d-sm-block"></div>
+
+                    <div class="d-flex flex-column px-3 py-3 email2">
+
+
+                        <div class="name-date">
+    
+                            <p class="name-date__name">Firstnames Lastname</p>
+                            <p class="name-date__date">12:00 AM</p>
+    
+                        </div>
+    
+                        <p class="subject-title">Subject Title</p>
+                        <p class="message">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+                    </div>
+
+                </div>
+
                 <div class="d-flex align-items-center email-container">
 
                     <div class="profile-pic d-none d-sm-block"></div>
@@ -149,13 +303,73 @@
 
             </div>
 
+            <div class="col-md-6 col-lg-5 col-xl-6 d-none d-md-block d-lg-block d-xl-block position-relative">
+
+                <div class="email-info-container d-flex flex-column p-1">
+
+                    <div class="email-options-container d-flex justify-content-between">
+
+                        <i class="bi bi-arrow-left"></i>
+                        
+                        <div class="email-options d-flex justify-content-around align-items-center gap-2">
+
+                            <i class="email-options__star-icon bi bi-star"></i>
+                            <div class="vertical-bar"></div>
+                            <i class="email-options__reply-icon bi bi-reply"></i>
+                            <div class="vertical-bar"></div>
+                            <i class="email-options__trash-icon bi bi-trash"></i>
+
+                        </div>
+                        
+                    
+                    </div>
+
+                    <div class="email-contact-info d-flex align-items-center gap-3 py-3">
+
+                        <div class="sender-profile-pic"></div>
+    
+                        <div class="d-flex flex-column w-100">
+    
+    
+                            <div class="email-name-date d-flex justify-content-between align-items-center">
+        
+                                <p class="email-name-date__name">Suguru Geto</p>
+                                <p class="email-name-date__date">12:00 AM</p>
+        
+                            </div>
+
+                            <p class="email-address">email-address@email.com</p>
+
+                        </div>
+
+                </div>
+
+                <p class="email-subject-title">Subject Title</p>
+                <div class="horizontal-bar"></div>
+                <p class="email-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                <div class="reply-message-button d-flex align-items-center gap-2 w-100">
+
+                    <div class="reply-message-input-container position-relative d-flex align-items-center w-100 gap-2">
+                        <div class="email-user-profile-pic d-none d-sm-block"></div>
+                        <!-- <textarea class="" placeholder="Message" style="width: 100%; resize: none; height: auto; padding: 0px;"></textarea> -->
+                        <input class="reply-message-input flex-grow-1" type="text" placeholder="Message">
+                        <i class="bi bi-paperclip"></i>
+                    </div>
+
+                    <button type="button" class="send-button btn">Send</button>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
-    <!-- Navigation Sidebar -->
+    <!-- Navigation Sliding Sidebar -->
 
-    <div class="navigation-sidebar d-flex flex-column p-4 gap-3">
+    <div class="navigation-sliding-sidebar d-flex flex-column p-4 gap-3">
 
         <div class="user-profile-pic align-self-center"></div>
 
@@ -173,14 +387,14 @@
         <button type="button" class="compose-btn btn btn-primary">Compose</button>
 
 
-        <div class="navigation-sidebar-option navigation-sidebar-option--highlight d-flex justify-content-between">
+        <div class="navigation-sidebar-option d-flex justify-content-between">
 
             <div class="icon-title d-flex gap-3">
                 <i class="bi bi-inbox"></i>
                 <p>Inbox</p>
             </div>
             
-            <p class="messages-amount messages-amount--highlight">25</p>
+            <p class="messages-amount">25</p>
 
         </div>
 
@@ -245,7 +459,16 @@
 
     </div>
     
-    <!-- Navigation Sidebar -->
+    <!-- Navigation Sliding Sidebar -->
+
+
+
+    <!-- Single Email Page View -->
+
+
+
+    <!-- Single Email Page View -->
+
     
 </body>
 </html>

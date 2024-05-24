@@ -21,9 +21,15 @@ p {
     overflow-x: hidden;
 }
 
-.bi-arrow-left, .bi-star, .bi-reply, .bi-trash {
+.bi-arrow-left, .email-options__star-icon, .email-options__reply-icon, 
+.email-options__trash-icon{
     font-size: 24px;
     color: hsla(0, 0%, 15%, 0.6);
+}
+
+.email-info-container {
+    /* border-left: 2px solid hsla(0, 0%, 15%, .2); */
+    height: 100vh;
 }
 
 .sender-profile-pic {
@@ -102,13 +108,14 @@ p {
 .reply-message-button {
     border-top: 2px solid hsla(0, 0%, 15%, 0.2);
     padding: 16px;
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     left: 0;
     bottom: 0px;
     backdrop-filter: blur(2px);
 }
 
-.user-profile-pic {
+.email-user-profile-pic {
     width: 48px; 
     height: 48px; 
     background-color: gray; 
