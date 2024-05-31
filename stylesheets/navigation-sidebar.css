@@ -1,0 +1,137 @@
+.navigation-sidebar > .navigation-sidebar__folder:hover {
+    outline: 1px solid hsla(0, 0%, 15%, 0.15);
+}
+
+.navigation-sidebar__user-profile-pic {
+    width: 64px; 
+    height: 64px; 
+    background-color: gray; 
+    border-radius: 50%; 
+    border: 1px solid hsla(0, 0%, 15%, 0.2);
+    cursor: pointer;
+}
+
+.navigation-sidebar__user-account-dropdown {
+    background-color: white;
+    color: #252525;
+    border: 1px solid hsla(0, 0%, 15%, 0.2);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.navigation-sidebar__compose-btn {
+    padding: 12px 0 12px 0;
+    background-color: #26B4C8;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.navigation-sidebar__folder {
+    padding: 0 16px 0 16px;
+    font-size: 16px;
+    color: hsla(0, 0%, 15%, 0.5);
+    cursor: pointer;
+}
+
+.navigation-sidebar__folder--highlight {
+    color: #252525;
+}
+
+.folder__icon-title, .folder__messages-amount {
+    pointer-events: none;
+}
+
+.folder__messages-amount--highlight {
+    color: #26B4C8;
+}
+
+
+/* Container Query for navigation-sidebar or left column */
+
+.navigation-sidebar-container {
+    container-name: sidebar;
+    container-type: inline-size; /* only the width of the container will be considered when evaluating conditions */
+}
+
+/* Will apply styles when width of left column is less than or equal to 200px  */
+@container sidebar (max-width: 200px) {
+    
+    .navigation-sidebar__user-account-dropdown {
+        display: none;
+    }
+
+    .navigation-sidebar__compose-btn {
+        font-size: 20px;
+    }
+
+    .navigation-sidebar__folder {
+        padding: 0;
+    }
+
+    .folder__icon-title {
+        width: 100%;
+        gap: 0 !important;
+        align-items: center;
+        flex-direction: column;
+        font-size: 28px;
+    }
+
+    .bi-star, .bi-trash {
+        font-size: 28px;
+    }
+
+    .folder__title {
+        font-size: 18px;
+        margin-top: -4px;
+    }
+
+    .folder__messages-amount {
+        display: none;
+    }
+
+}
+
+
+/* Navigation Sliding Sidebar */
+
+.navigation-sliding-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: hsla(0, 0%, 15%, 0.5);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+}
+
+.navigation-sliding-sidebar > .navigation-sidebar__folder {
+    color: white;
+    padding: 0 24px 0 24px;
+    font-size: 24px;
+}
+
+.navigation-sliding-sidebar > .navigation-sidebar__compose-btn {
+    margin-bottom: 16px;
+    font-size: 28px;
+}
+
+.navigation-sliding-sidebar > .dropdown > .navigation-sidebar__user-account-dropdown {
+    font-size: 20px;
+}
+
+.navigation-sliding-sidebar__close-btn {
+    position: absolute; 
+    top: 0;
+    font-size: 64px;
+    color: white;
+    cursor: pointer;
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+/* Navigation Sliding Sidebar */
