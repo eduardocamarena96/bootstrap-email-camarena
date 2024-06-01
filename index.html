@@ -58,7 +58,7 @@
 
                     </div>
 
-                    <button type="button" class="navigation-sidebar__compose-btn btn btn-primary">Compose</button>
+                    <button type="button" class="navigation-sidebar__compose-btn btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Compose</button>
 
                     <div id="inbox-navigation-sidebar-folder" class="navigation-sidebar__folder navigation-sidebar__folder--highlight d-flex justify-content-between">
 
@@ -416,7 +416,7 @@
             </ul>
         </div>
 
-        <button type="button" class="navigation-sidebar__compose-btn btn btn-primary">Compose</button>
+        <button type="button" class="navigation-sidebar__compose-btn btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Compose</button>
 
 
         <div class="navigation-sidebar__folder d-flex justify-content-between">
@@ -492,6 +492,38 @@
     </div>
     
     <!-- Navigation Sliding Sidebar (END) -->
+
+
+    <!-- Bootstrap Offcanvas Component for composing email (START) -->
+
+    <div class="offcanvas offcanvas-bottom h-50" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header pb-0">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Compose Email</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <form action="">
+                <div class="mb-2">
+                    <label for="emailTo" class="form-label">To</label>
+                    <input type="email" class="form-control" id="emailTo" placeholder="Recipient's email">
+                </div>
+                <div class="mb-2">
+                    <label for="emailSubject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="emailSubject" placeholder="Email subject">
+                </div>
+                <div class="mb-2">
+                    <label for="emailBody" class="form-label">Message</label>
+                    <textarea class="form-control" id="emailBody" rows="4" placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          
+        </div>
+      </div>
+
+    <!-- Bootstrap Offcanvas Component for composing email (END) -->
+
 
 </body>
 </html>
